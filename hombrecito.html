@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hombrecito{
+            background-image: url(images/Image20230807104408.png);
+            width: 100px; ;
+            height: 160px;
+            margin: auto;
+            animation: caminar 1s steps(6) infinite;
+            position: relative;
+            bottom: 28px;
+        }
+        @keyframes caminar{
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: -670px ;
+            }
+
+        }
+        #cielo{
+            background-image: url(images/Image20230807112354.png);
+            animation: movercielo 7s linear infinite;
+        }
+        @keyframes movercielo{
+            0%{
+                background-position: 550px;
+            }
+            100%{
+                background-position: 0;
+            }
+        }
+
+        #mar{
+            background-image: url(images/Image20230807112426.png);
+            position: relative;
+            top: 150px;
+            animation: movermar 7s linear infinite;
+            box-shadow: 10px 10px 40px 20px rgb(0, 0, 0, 0.95) inset;
+        }
+        @keyframes movermar{
+            0%{
+                background-position: 100%;
+            }
+            100%{
+                background-position: 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="cielo">
+        <div id="mar">
+        <div id="hombrecito"></div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nena{
+            background-image: url(images/WhatsApp\ Image\ 2023-08-07\ at\ 9.53.56\ AM.jpeg);
+            width: 800px; ;
+            height: 280px;
+            background-position: 0 0;
+            margin: auto;
+            /* abajo empezamos la animacion con un nombre en este caso correr, la forma en la cual mueve por cuanto tiempo va a ser ejecutando la animacion*/
+            animation: correr 5s linear infinite;
+        }
+        @keyframes correr{
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: 800px;
+            }
+        }
+        .cajita{
+            width: 100px; ;
+            height: 100px;
+            background-color: blueviolet;
+            animation-name: pintar;
+            animation-duration: 10s;
+        }
+        @keyframes pintar{
+            0%{
+                background-color: blueviolet;
+            }
+            25%{
+                background-color: aqua;
+            }
+
+            100%{
+                background-color: greenyellow;
+            }
+
+
+        }
+        p{
+            animation: slider 5s
+        }
+        @keyframes slider{
+            0%{
+                margin-left: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nena"></div>
+    <div class="cajita"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maiores officia explicabo ullam beatae accusantium delectus laborum a dolorem odio? Ad eligendi perferendis nulla beatae error eos culpa, nostrum explicabo? A, praesentium laboriosam. Perspiciatis in quos quae quod, ipsam, perferendis expedita reiciendis possimus, error facere accusantium assumenda rem numquam provident quo architecto pariatur praesentium libero maxime rerum. Tenetur perspiciatis odit corporis quae quos nesciunt beatae? Laudantium, ad quod tempore in alias ipsam? Illo vel ipsum dolores nam tempora cupiditate voluptatibus mollitia, quia voluptatem. Exercitationem, aspernatur. Vel ut, quisquam laboriosam sunt, nobis sapiente quia placeat cupiditate harum aut ullam dignissimos ea.</p>
+
+</body>
+</html>
